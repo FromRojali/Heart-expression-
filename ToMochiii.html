@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Mochiii 🤍</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+max-width:700px;
+width:100%;
+box-shadow:0 0 25px rgba(255,255,255,.08);
+text-align:center;
+}
+
+h1{
+margin-bottom:15px;
+}
+
+p{
+margin-top:15px;
+line-height:1.8;
+font-size:17px;
+display:none;
+animation:fade .6s;
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#f472b6;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Untuk Mochiii 🤍</h1>
+
+<p>Eummm... mulai dari mana ya...</p>
+
+<p>Mungkin isinya ini bakal panjang. Ini cuma semua yang ada di pikiran dan hati aku.</p>
+
+<p>Mungkin nanti bakal kelihatan dry text, sad text, atau apapun itu buat kamu. Tapi aku cuma pengen jujur.</p>
+
+<p>Karena semalam kita nggak jadi call, jadi aku milih cooding biar aku bisa ungkapin semua emosi aku.</p>
+
+<p>Aku ngerasa... komunikasi kita dua hari terakhir agak turun ya.</p>
+
+<p>Aku nggak tahu dari sudut pandang kamu. Mungkin kamu capek, mungkin lagi nggak mood. Aku benar-benar nggak tahu.</p>
+
+<p>Dan aku juga udah kebayang kamu mungkin bakal bilang, "kan kita belum ada hubungan..." atau "just just just..." kayak biasanya.</p>
+
+<p>Aku tahu kok... kamu belum ada niat buat buru-buru masuk hubungan sama orang lain.</p>
+
+<p>Aku juga nggak mau semuanya berjalan cepat.</p>
+
+<p>Cuma... karena aku benar-benar terbuka sama kamu, kadang aku bingung batasanku sampai mana sebelum semuanya benar-benar punya nama.</p>
+
+<p>Aku takut tanpa sadar melewati batas yang bikin kamu nggak nyaman.</p>
+
+<p>Aku juga sebenarnya cukup peka kalau ada sesuatu yang berubah. Tapi sering kali aku memilih diam, sampai akhirnya nggak kuat lagi.</p>
+
+<p>Dari awal aku udah bilang... aku pengen kamu kenal aku apa adanya.</p>
+
+<p>Mungkin sekarang aku belum bisa kasih alasan kenapa kehadiranku layak buat kamu pertahanin.</p>
+
+<p>Belum bisa bikin kamu merasa kalau aku ada aja itu udah cukup.</p>
+
+<p>Tapi aku tetap pengen jalanin proses ini pelan-pelan.</p>
+
+<p>Aku cuma takut... takut salah langkah.</p>
+
+<p>Ini loh aku.</p>
+
+<p>Aku yang mungkin bakal tetap begini dari PDKT, kalau nanti pacaran, kalau nanti sampai tua.</p>
+
+<p>Aku nggak mau jadi orang lain cuma supaya diterima.</p>
+
+<p>Aku cuma berharap... suatu saat nanti kamu bisa nerima aku yang sekarang.</p>
+
+<p>Walaupun mungkin butuh waktu yang lama.</p>
+
+<p>Ah... udah nggak kuat ngetik lagi.</p>
+
+<p>Nggak tahu kamu bakal mikir apa setelah baca semuanya.</p>
+
+<p>Aku cuma udah nggak sanggup nyimpen semuanya sendiri.</p>
+
+<p>Maaf ya, Mochiii...</p>
+
+<p>Kalau kamu mau bales, aku bakal senang.</p>
+
+<p>Kalau belum juga nggak apa-apa.</p>
+
+<p>Aku cuma pengen kamu tahu isi hati aku hari ini.</p>
+
+<p><b>Terima kasih udah mau baca sampai akhir. 🤍</b></p>
+
+<p><b>LOVE YOU MORE MOCHIIII. 🤍</b></p>
+
+<button onclick="next()">Baca Pelan-Pelan 🤍</button>
+
+</div>
+
+<script>
+
+let index=0;
+const text=document.querySelectorAll("p");
+const btn=document.querySelector("button");
+
+function next(){
+
+if(index<text.length){
+text[index].style.display="block";
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
+index++;
+}
+
+if(index==text.length){
+btn.innerHTML="Peluk Virtual 🤍";
+btn.onclick=function(){
+alert("Terima kasih sudah membaca semuanya.\n\nAku nggak minta jawaban sekarang.\nAku cuma berharap kamu mengerti isi hati aku. 🤍");
+}
+}
+
+}
+
+</script>
+
+</body>
+</html>
